@@ -1,0 +1,177 @@
+.header{
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    background-color:rgba(255, 255, 255, 0);
+    overflow: hidden;
+}
+
+.header .logo{
+    /* position: absolute; */
+    height: 70px;
+    /* 이미지를 가운데로 보내고 싶을땐 line-height쓰면 안되고 flex처리 해줘야함 */
+    display: flex;
+    align-items: center;
+    padding:0 20px;
+}
+
+.header .logo a .logo_white{
+    position: absolute;
+    transition: all 0.25s ease;
+}
+
+.header .logo a .logo_blue{
+    opacity: 0;
+    transition: all 0.25s ease;
+}
+
+.header:hover .logo a .logo_blue{
+    opacity: 1;
+    transition:all 0.25s ease;
+}
+
+.header:hover .logo a .logo_white{
+    opacity: 0;
+    transition:all 0.25s ease;
+}
+
+.header:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    position: absolute;
+    top: 70px;
+}
+
+.header:hover{
+    height: 400px;
+    background-color: rgba(255, 255, 255, 1);
+    transition:all 0.5s ease;
+}
+
+.header:hover .depth01{
+    color: black;
+}
+
+.depth01{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.depth01 .depth01-item{
+    font-size: 18px;
+    font-weight: 700;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    justify-content: center;
+}
+
+.depth01 >li:hover .depth01-item{
+    border-bottom:3px solid #3bb88c;
+}
+
+.depth02 .title {
+    display: flex;
+    justify-content: center;
+    padding-top:20px ;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.depth02 .depth02-list{
+    text-align: center;
+    padding: 7px 0;
+}
+
+.depth02 .depth02-list li a{
+    font-size: 12px;
+    font-weight: 500;
+    color: #5e5e5e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+}
+
+.depth02 .depth02-list li a:hover{
+    color: #3bb88c;
+}
+
+.header .lang{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding:0 10px;
+}
+
+.header .lang ul{
+    font-size: 13px;
+    height: 10px;
+    width: 80px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #adadad;
+    border-radius: 30rem;
+    transition: opacity .35s;
+}
+
+.lang ul li{
+    padding: 0 10px;
+}
+
+.lang ul span{
+    color: #adadad;
+}
+
+.lang .language-tab li a{
+    color: #adadad;
+}
+
+.lang .language-tab .kor{
+    color:#3bb88c;
+}
+.lang .language-tab .eng:hover{
+    color:#3bb88c;
+}
+
+.header .link{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding:0 20px;
+}
+
+.header .link img{
+    width: 100px;
+    height: 25px;
+}
+
+.header .link a .logo_black_ko{
+    position: absolute;
+    transition: all 0.25s ease;
+}
+
+.header .link a .logo_blue_ko{
+    opacity: 0;
+    transition: all 0.25s ease;
+}
+
+.header .link:hover a .logo_blue_ko{
+    opacity: 1;
+    transition:all 0.25s ease;
+}
+
+.header .link:hover a .logo_black_ko{
+    opacity: 0;
+    transition:all 0.25s ease;
+}

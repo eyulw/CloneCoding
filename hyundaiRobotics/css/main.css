@@ -1,0 +1,54 @@
+.main_img img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.tit{
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tit h2{
+    font-size: 70px;
+    text-align: center;
+    line-height: 0.9;
+    /* color: white; */
+    font-weight: 900;
+}
+
+.tit h2 strong{
+    font-size: 70px;
+    font-weight: 900;
+    letter-spacing: 1.82px;
+    line-height: 1.5;
+    color: #fff;
+}
+.gradient{
+    background: linear-gradient(90deg, rgba(59,179,184,1) 0%, rgba(66,230,150,1) 30%);
+    -webkit-background-clip: text !important;
+    color: transparent !important;
+}
+
+.tit .btn{
+    padding: 20px 0;
+}
+
+.common-btn{
+    width: 100%;
+    max-width: 170px;
+    height: 54px;
+    /* color: #fff; */
+    border: solid 2px #ccc;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
